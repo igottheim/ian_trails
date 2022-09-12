@@ -1,13 +1,16 @@
-import HikingForm from "./HikingForm";
 
-function HikingPage()
+
+import HikingList from "./HikingList";
+
+function HikingPage({hikes})
 {   
     return (
 
-
+    <>
     <button>Hello</button>
+    <HikingList hikes = {hikes} />
    
-   
+    </>
    
     )
 

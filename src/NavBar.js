@@ -5,11 +5,14 @@ function NavBar()
 
     return(
         <div>
-        <NavLink exact to = "/" className='navBarLink'>  HOME  </NavLink>
-        <span></span>
+        <NavLink exact to = "/" className='navBarLink'> About  </NavLink>
+         <span></span>
         <NavLink to = "/HikingForm" className='navBarLink'>  HikingForm  </NavLink>
         <span></span>
         <NavLink to = "/HikingPage" className='navBarLink'>  HikingPage  </NavLink>
+        <span></span>
+        
+       
        
        
       
