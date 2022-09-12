@@ -4,7 +4,10 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
+import { CardCover } from '@mui/joy';
 import Typography from '@mui/joy/Typography';
+
+import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
 
 
 
@@ -17,8 +20,9 @@ import Typography from '@mui/joy/Typography';
         <Typography level="h2" fontSize="md" textAlign={"center"}>
          {hike.name}
         </Typography>
-        <Typography level="body2" textAlign={"center"}>{hike.Location}</Typography>
+        <Typography level="body2" textAlign={"center"}> <LocationOnRoundedIcon/>{hike.Location}</Typography>
       </Box>
+      
       <AspectRatio objectFit='contain' minHeight="250px" maxHeight="300px" sx={{ my: 2 }}>
         <img
           src={hike.image}
