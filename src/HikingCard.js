@@ -4,7 +4,6 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
-import { CardCover } from '@mui/joy';
 import Typography from '@mui/joy/Typography';
 
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'

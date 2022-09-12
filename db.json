@@ -5,8 +5,8 @@
       "name": "Mt. Whitney",
       "Location": "Inyo, California",
       "Date": "June 26, 2022",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mount_Whitney_2003-03-25.jpg",
-      "likes": 27,
+      "image": "/assets/1.jpg",
+      "likes": 34,
       "distance": "22"
     },
     {
@@ -41,7 +41,7 @@
       "Location": "Kibosho Magharibi, Kilimanjaro",
       "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjE4MzQ3MTcvZDdkNzNjOGQ3MjA1OWQ5ZWE1MDQ3NjhlNzJhOGQ4N2QuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
       "distance": "40.8",
-      "likes": 15,
+      "likes": 17,
       "id": 5
     },
     {
@@ -49,7 +49,7 @@
       "Location": "Pahaquarry, New Jersey.",
       "image": "https://www.njhiking.com/wp-content/uploads/2019/06/mt-tammany-fall2009-600x350-1-570x333.jpg",
       "distance": "3.6 ",
-      "likes": 4,
+      "likes": 7,
       "id": 6
     }
   ]
