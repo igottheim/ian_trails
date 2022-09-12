@@ -3,14 +3,14 @@ import './App.css';
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Alert from 'react-bootstrap/Alert'
-import HikingForm from './HikingForm';
+import HikingPage from './HikingPage';
 
 function App() {
   return (
     <div className="App">
-    <Button> Test Button </Button>
   
-    <HikingForm/>
+
+    <HikingPage/>
   
     </div>
   );
