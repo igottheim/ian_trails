@@ -47,7 +47,7 @@
 }
 
 .grad{
-  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143))
+  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143));
   
 }
 
@@ -58,3 +58,4 @@
   justify-content: center;
   align-items: center;
 }
+

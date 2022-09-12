@@ -5,7 +5,7 @@ function NavBar()
 
     return(
         <div className="center">
-        <NavLink exact to = "/" className='navBarLink'> About  </NavLink>
+        <NavLink exact to = "/About" className='navBarLink'> About  </NavLink>
          <span></span>
         <NavLink to = "/HikingForm" className='navBarLink'>  HikingForm  </NavLink>
         <span></span>

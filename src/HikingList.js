@@ -7,7 +7,7 @@ function HikingList({hikes, handleClick})
 
     return(
 
-        <div>{hikingElement}</div>
+        <div >{hikingElement}</div>
     )
 }
 

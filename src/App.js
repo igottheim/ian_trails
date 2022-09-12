@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HikingPage from './HikingPage';
 import HikingForm from './HikingForm';
+import About from './About';
 import NavBar from './NavBar';
 import {Route, Switch } from 'react-router-dom';
 
@@ -11,15 +12,8 @@ import { useState , useEffect } from 'react';
 function App() {
 
   const [hikes, setHikes] = useState([])
-  // const [newHike, setNewHike]= useState({
-  //     "name": "",
-  //     "Location": "",
-  //     "image": "",
-  //     "likes": 1,
-  //     "distance": "",
-  //     "id": ""
-  // })
 
+ 
 
 console.log(hikes)
   useEffect(()=>{
@@ -94,7 +88,7 @@ console.log(hikes)
     <HikingPage hikes = {hikes} handleClick = {manageClick}/>
     </Route>
     <Route path = "*">
-    <button className='center'/>
+    <About/>
     </Route>
    
     </Switch>
