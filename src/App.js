@@ -4,13 +4,18 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Alert from 'react-bootstrap/Alert'
 import HikingPage from './HikingPage';
+import NavBar from './NavBar';
+import { Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-  
-
+    <NavBar/>
+    <Switch>
+      <Route path = "/HikingForm">
     <HikingPage/>
+    </Route>
+    </Switch>
   
     </div>
   );
