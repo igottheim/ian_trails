@@ -8,11 +8,11 @@ import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 
 
- function HikingCard({hike}) {
+ function HikingCard({hike, handleClick}) {
 
-  console.log(hike)
+
   return (
-    <Card variant="outlined" sx={{ "--Card-radius": "25px", minWidth: '100px' , maxWidth: '400px', marginLeft: "450px", color: "blue"}}>
+    <Card onClick ={()=>handleClick(hike)} variant="outlined" sx={{ "--Card-radius": "25px", minWidth: '100px' , maxWidth: '400px', marginLeft: "450px", color: "blue"}}>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
         <Typography level="h2" fontSize="md" sx={{ alignSelf: 'flex-start' }}>
          {hike.name}
@@ -35,7 +35,7 @@ import Typography from '@mui/joy/Typography';
           aria-label="Explore Bahamas Islands"
           sx={{ ml: 'auto', fontWeight: 600, border: '2px solid black' }}
         >
-          Like this Hike
+          {hike.likes} ⛰️ 
         </Button>
       </Box>
     </Card>

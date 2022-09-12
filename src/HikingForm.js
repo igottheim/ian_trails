@@ -2,8 +2,14 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function HikingForm() {
+
+  function handleSubmit(e)
+  {
+    e.preventDefault()
+    console.log(e)
+  }
   return (
-    <Form>
+    <Form className='Form' onSubmit={(e)=> handleSubmit(e)}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Name of Hike</Form.Label>
         <Form.Control type="hike" placeholder="Enter Hike Name" />

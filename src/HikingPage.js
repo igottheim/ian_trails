@@ -2,16 +2,10 @@
 
 import HikingList from "./HikingList";
 
-function HikingPage({hikes})
+function HikingPage({hikes, handleClick})
 {   
     return (
-
-    <>
-    <button>Hello</button>
-    <HikingList hikes = {hikes} />
-   
-    </>
-   
+    <HikingList hikes = {hikes} handleClick = {handleClick} />
     )
 
 }
