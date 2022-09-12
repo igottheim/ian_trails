@@ -5,8 +5,7 @@ function HikingPage()
     return (
 
 
-    <HikingForm/>
-   
+    <button>Hello</button>
    
    
    
