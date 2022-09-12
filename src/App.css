@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -45,4 +43,18 @@
   width: 400px;
   text-align: center;
   margin-left: 450px;
+  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143))
+}
+
+.grad{
+  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143))
+  
+}
+
+.center{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

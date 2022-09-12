@@ -6,7 +6,8 @@
       "Location": "Inyo, California",
       "Date": "June 26, 2022",
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mount_Whitney_2003-03-25.jpg",
-      "likes": 11
+      "likes": 23,
+      "distance": "22"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "Location": "Philipstown, NY",
       "Date": "July 28, 2022",
       "image": "https://s.hdnux.com/photos/01/21/56/05/21422433/5/2400x0.jpg",
-      "likes": 11
+      "likes": 11,
+      "distance": "4"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "Location": "Syria, VA",
       "Date": "April 4, 2022",
       "image": "https://www.nps.gov/common/uploads/cropped_image/primary/827699E5-94E1-A320-CEB9F6FC0A97FB6C.jpg?width=1600&quality=90&mode=crop",
-      "likes": 9
+      "likes": 14,
+      "distance": "9"
     },
     {
       "id": 4,
@@ -30,7 +33,16 @@
       "Location": "Cold Spring, NY",
       "Date": "September, 12, 2022",
       "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjM4ODk5MTIvMmZkZGVmOTNhOTgwZTIxNWY1YzBkNzc3OWMwMDc4ODQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-      "likes": 10
+      "likes": 25,
+      "distance": "5.5"
+    },
+    {
+      "name": "Mt. Kilamanjaro",
+      "Location": "Kibosho Magharibi, Kilimanjaro",
+      "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjE4MzQ3MTcvZDdkNzNjOGQ3MjA1OWQ5ZWE1MDQ3NjhlNzJhOGQ4N2QuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
+      "distance": "40.8",
+      "likes": 14,
+      "id": 5
     }
   ]
 }

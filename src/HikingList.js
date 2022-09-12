@@ -3,7 +3,7 @@ import HikingCard from "./HikingCard";
 
 function HikingList({hikes, handleClick})
 {
-   const hikingElement =  hikes.map((data)=> <HikingCard handleClick={handleClick} hike= {data}/>)
+   const hikingElement =  hikes.map((data)=> <HikingCard key = {data.id} handleClick={handleClick} hike= {data}/>)
 
     return(
 

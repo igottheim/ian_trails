@@ -1,13 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-function HikingForm() {
+function HikingForm({handleSubmit}) {
 
-  function handleSubmit(e)
-  {
-    e.preventDefault()
-    console.log(e)
-  }
   return (
     <Form className='Form' onSubmit={(e)=> handleSubmit(e)}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -16,18 +11,18 @@ function HikingForm() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Location of Hike</Form.Label>
-        <Form.Control type="hike" placeholder="Name of Hike" />
+        <Form.Control type="hike" placeholder="Location of Hike" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Hike Distance</Form.Label>
         <Form.Control type="hike" placeholder="Hike Distance" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Hike URL</Form.Label>
+        <Form.Label>Hike Image URL</Form.Label>
         <Form.Control type="hike" placeholder="Hiking URL" />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Submit New Hike!
       </Button>
     </Form>
   );

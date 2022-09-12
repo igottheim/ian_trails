@@ -11,6 +11,14 @@ import { useState , useEffect } from 'react';
 function App() {
 
   const [hikes, setHikes] = useState([])
+  // const [newHike, setNewHike]= useState({
+  //     "name": "",
+  //     "Location": "",
+  //     "image": "",
+  //     "likes": 1,
+  //     "distance": "",
+  //     "id": ""
+  // })
 
 
 console.log(hikes)
@@ -50,16 +58,43 @@ console.log(hikes)
       .then ( setHikes(newHikeArray))
     }
     
+    function manageSubmit(e)
+    {
+      e.preventDefault()
+        const obj = {
+          "name": e.target[0].value,
+          "Location":  e.target[1].value,
+          "image": e.target[3].value,
+          "distance": e.target[2].value,
+          "likes": 1,
+          "id": hikes.length+1
+        }
+       
+       
+        fetch('http://localhost:3021/hiking',
+      {
+        method:"POST",
+        headers:{"Content-Type":"application/json",
+        },
+      body:JSON.stringify(obj)
+      })
+      
+        setHikes([...hikes, obj])
+    }
+   
 
   return (
-    <div className="App">
-    <NavBar/>
+    <div className = "grad" >
+    <NavBar className = "center"/>
     <Switch>
       <Route path = "/HikingForm">
-    <HikingForm/>
+    <HikingForm handleSubmit={manageSubmit}/>
     </Route>
     <Route path = "/HikingPage">
     <HikingPage hikes = {hikes} handleClick = {manageClick}/>
+    </Route>
+    <Route path = "*">
+    <button className='center'/>
     </Route>
    
     </Switch>
