@@ -1,3 +1,48 @@
+IanTrails
+
+The IanTrails app is a social media interface for displaying hikes that one has been on. It has been set up to have similar css styling to instagram, so that it is enjoyable to read through the information
+
+Current Functionality:
+
+The app loads with a db.json file. In the hiking page component that can be displayed with the nav bar,  hikeing information from the db.json file is displayed. The information shows the name, location, an image, as well as hike distance. There is also a like button that persists with each click.
+
+The app has an about form that can be displayed through the nav bar. It currently discusses the benefits of hiking. 
+
+The nav bar also allows for the user to display a hiking form, where they can input new hikes as they complete them. Once submitted, the hike will move to the hiking page. The submission will only persists if the user types in all of the information (name, location, distance, and image URL).
+
+Component Tree
+App
+    NavBar (links to About, HikingForm, HikingPage)
+    About
+    HikingForm
+    HikingPage
+        Hiking List
+            Hiking Card
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

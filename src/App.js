@@ -17,7 +17,7 @@ function App() {
 
 console.log(hikes)
   useEffect(()=>{
-  fetch('http://localhost:3021/hiking')
+  fetch('http://localhost:4000/hiking')
   .then(r=> r.json())
   .then(data => setHikes(data))
   }
@@ -41,7 +41,7 @@ console.log(hikes)
           return item
         }})
         
-        fetch(`http://localhost:3021/hiking/${hike.id}`,
+        fetch(`http://localhost:4000/hiking/${hike.id}`,
         {
           method: "PATCH",
           headers:{"Content-Type":"application/json",
@@ -54,8 +54,12 @@ console.log(hikes)
     
     function manageSubmit(e)
     {
+      let obj
       e.preventDefault()
-        const obj = {
+      
+      if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value !=="")
+      {
+        obj = {
           "name": e.target[0].value,
           "Location":  e.target[1].value,
           "image": e.target[3].value,
@@ -63,17 +67,23 @@ console.log(hikes)
           "likes": 1,
           "id": hikes.length+1
         }
+
+        fetch('http://localhost:4000/hiking',
+        {
+          method:"POST",
+          headers:{"Content-Type":"application/json",
+          },
+        body:JSON.stringify(obj)
+        })
+        
+          setHikes([...hikes, obj])
+      }
+      else{
+        
+        alert("Please Fill In All Information")
+      }
        
        
-        fetch('http://localhost:3021/hiking',
-      {
-        method:"POST",
-        headers:{"Content-Type":"application/json",
-        },
-      body:JSON.stringify(obj)
-      })
-      
-        setHikes([...hikes, obj])
     }
    
 

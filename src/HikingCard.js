@@ -26,6 +26,7 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
         <img
           src={hike.image}
           alt=""
+          
         />
       </AspectRatio>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>

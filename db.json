@@ -6,7 +6,7 @@
       "Location": "Inyo, California",
       "Date": "June 26, 2022",
       "image": "/assets/1.jpg",
-      "likes": 34,
+      "likes": 36,
       "distance": "22"
     },
     {
@@ -24,7 +24,7 @@
       "Location": "Syria, VA",
       "Date": "April 4, 2022",
       "image": "https://www.nps.gov/common/uploads/cropped_image/primary/827699E5-94E1-A320-CEB9F6FC0A97FB6C.jpg?width=1600&quality=90&mode=crop",
-      "likes": 14,
+      "likes": 17,
       "distance": "9"
     },
     {
@@ -49,7 +49,7 @@
       "Location": "Pahaquarry, New Jersey.",
       "image": "https://www.njhiking.com/wp-content/uploads/2019/06/mt-tammany-fall2009-600x350-1-570x333.jpg",
       "distance": "3.6 ",
-      "likes": 7,
+      "likes": 9,
       "id": 6
     }
   ]
