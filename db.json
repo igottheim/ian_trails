@@ -6,7 +6,7 @@
       "Location": "Inyo, California",
       "Date": "June 26, 2022",
       "image": "/assets/1.jpg",
-      "likes": 36,
+      "likes": 71,
       "distance": "22"
     },
     {
@@ -15,7 +15,7 @@
       "Location": "Philipstown, NY",
       "Date": "July 28, 2022",
       "image": "https://s.hdnux.com/photos/01/21/56/05/21422433/5/2400x0.jpg",
-      "likes": 11,
+      "likes": 23,
       "distance": "4"
     },
     {
@@ -33,7 +33,7 @@
       "Location": "Cold Spring, NY",
       "Date": "September, 12, 2022",
       "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjM4ODk5MTIvMmZkZGVmOTNhOTgwZTIxNWY1YzBkNzc3OWMwMDc4ODQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
-      "likes": 25,
+      "likes": 28,
       "distance": "5.5"
     },
     {
@@ -41,7 +41,7 @@
       "Location": "Kibosho Magharibi, Kilimanjaro",
       "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjE4MzQ3MTcvZDdkNzNjOGQ3MjA1OWQ5ZWE1MDQ3NjhlNzJhOGQ4N2QuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
       "distance": "40.8",
-      "likes": 17,
+      "likes": 18,
       "id": 5
     },
     {
@@ -49,8 +49,16 @@
       "Location": "Pahaquarry, New Jersey.",
       "image": "https://www.njhiking.com/wp-content/uploads/2019/06/mt-tammany-fall2009-600x350-1-570x333.jpg",
       "distance": "3.6 ",
-      "likes": 9,
+      "likes": 14,
       "id": 6
+    },
+    {
+      "name": "Billy Goat Trail",
+      "Location": "Potomac, MD",
+      "image": "https://nvms3.s3.amazonaws.com/wp-content/uploads/2015/10/1015hiking_billygoat1.jpg",
+      "distance": "4.8",
+      "likes": 17,
+      "id": 7
     }
   ]
 }

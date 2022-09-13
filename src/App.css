@@ -59,3 +59,16 @@
   align-items: center;
 }
 
+.list{
+  display: list-item;
+  list-style-type: "⛰️";
+  padding-inline-start: 1ch;
+
+}
+
+.ul{
+
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  margin-left: 10px;
+}
+

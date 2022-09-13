@@ -11,11 +11,11 @@ function HikingForm({handleSubmit}) {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Location of Hike</Form.Label>
-        <Form.Control type="hike" placeholder="Location of Hike" />
+        <Form.Control type="hike" placeholder="City,State" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Hike Distance</Form.Label>
-        <Form.Control type="hike" placeholder="Hike Distance" />
+        <Form.Control type="hike" placeholder="Distance in Miles" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Hike Image URL</Form.Label>

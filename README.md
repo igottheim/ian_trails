@@ -20,7 +20,8 @@ App
             Hiking Card
     
 
-
+Open the db.json file at....
+json-server -p 4000 db.json
 
 
 

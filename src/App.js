@@ -5,17 +5,17 @@ import HikingPage from './HikingPage';
 import HikingForm from './HikingForm';
 import About from './About';
 import NavBar from './NavBar';
-import {Route, Switch } from 'react-router-dom';
+import {Route, Switch, } from 'react-router-dom';
 
 import { useState , useEffect } from 'react';
+import { ConstructionOutlined } from '@mui/icons-material';
 
 function App() {
 
   const [hikes, setHikes] = useState([])
 
- 
 
-console.log(hikes)
+  //useEffect to pull information from db.json() file
   useEffect(()=>{
   fetch('http://localhost:4000/hiking')
   .then(r=> r.json())
@@ -57,7 +57,7 @@ console.log(hikes)
       let obj
       e.preventDefault()
       
-      if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value !=="")
+      if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value!== "")
       {
         obj = {
           "name": e.target[0].value,
@@ -80,7 +80,7 @@ console.log(hikes)
       }
       else{
         
-        alert("Please Fill In All Information")
+        alert("Please Fill In All Information. Please Make Sure URL is accurate!")
       }
        
        
@@ -97,7 +97,7 @@ console.log(hikes)
     <Route path = "/HikingPage">
     <HikingPage hikes = {hikes} handleClick = {manageClick}/>
     </Route>
-    <Route path = "*">
+    <Route exact path = "/About">
     <About/>
     </Route>
    
