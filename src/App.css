@@ -51,7 +51,7 @@
 .Form {
   width: 600px;
   text-align: center;
-  margin-left: 500px;
+  margin-left: 375px;
   background: linear-gradient(rgb(0, 174, 255), rgb(139, 156, 139))
 }
 
@@ -83,16 +83,17 @@
 }
 
 .span{
-  margin-left: 65%
+  margin-left: 35%
 }
 
 .link{
   color: rgb(12, 6, 6);
-  text-align: left;
+  text-align: center;
+  margin-left: 15%;
 }
 .link2{
   color: rgb(12, 6, 6);
-  text-align: right
+  text-align: center
 }
 
 /* styling for like button */
