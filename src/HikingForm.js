@@ -21,6 +21,10 @@ function HikingForm({handleSubmit}) {
         <Form.Label>Hike Image URL</Form.Label>
         <Form.Control type="hike" placeholder="Hiking URL" />
       </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Hike Description</Form.Label>
+        <Form.Control type="hike" placeholder="Description of Hike" />
+      </Form.Group>
       <Button variant="primary" type="submit">
         Submit New Hike!
       </Button>

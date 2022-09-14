@@ -43,11 +43,11 @@
   width: 400px;
   text-align: center;
   margin-left: 450px;
-  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143))
+  background: linear-gradient(rgb(0, 174, 255), rgb(139, 156, 139))
 }
 
 .grad{
-  background: linear-gradient(rgb(0, 174, 255), rgb(143, 188, 143));
+  background: linear-gradient(rgb(0, 174, 255), rgb(120, 140, 120));
   
 }
 
@@ -72,3 +72,15 @@
   margin-left: 10px;
 }
 
+.span{
+  margin-left: 200px
+}
+
+.link{
+  color: rgb(12, 6, 6);
+}
+
+div {
+  column-count: 1;
+  column-width: 100px
+}

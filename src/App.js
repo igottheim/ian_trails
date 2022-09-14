@@ -5,14 +5,17 @@ import HikingPage from './HikingPage';
 import HikingForm from './HikingForm';
 import About from './About';
 import NavBar from './NavBar';
-import {Route, Switch, } from 'react-router-dom';
+import {Route, Switch, useHistory} from 'react-router-dom';
+import HikingCard from './HikingCard';
+
 
 import { useState , useEffect } from 'react';
-import { ConstructionOutlined } from '@mui/icons-material';
 
 function App() {
 
+  //Set state for the db.json hikes file
   const [hikes, setHikes] = useState([])
+  const [project, setProject] = useState([]);
 
 
   //useEffect to pull information from db.json() file
@@ -24,12 +27,15 @@ function App() {
   ,[])
  
 
+  //Manages and persists the amount of likes for a hike with a patch request
   function manageClick(hike)
   {
+
        const updateLike =  hikes.filter((item)=> item.id === hike.id)
 
        updateLike[0].likes+=1
       
+       //creates a new array with the object modified based on the uplike
        const newHikeArray = hikes.map((item)=>
        {
         if (item.id === updateLike.id)
@@ -52,12 +58,15 @@ function App() {
       .then ( setHikes(newHikeArray))
     }
     
+    const history = useHistory();
+    //Adding a new hike and persisting with a post request
     function manageSubmit(e)
     {
       let obj
+      let response
       e.preventDefault()
-      
-      if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value!== "")
+
+      if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value!== ""&&e.target[4].value!== "")
       {
         obj = {
           "name": e.target[0].value,
@@ -65,7 +74,8 @@ function App() {
           "image": e.target[3].value,
           "distance": e.target[2].value,
           "likes": 1,
-          "id": hikes.length+1
+          "id": hikes.length+1,
+          "description": e.target[4].value
         }
 
         fetch('http://localhost:4000/hiking',
@@ -77,15 +87,49 @@ function App() {
         })
         
           setHikes([...hikes, obj])
+          history.push(`/HikingPage/${obj.id}`)
       }
       else{
         
         alert("Please Fill In All Information. Please Make Sure URL is accurate!")
-      }
-       
-       
+      } 
     }
    
+    
+    function manageProject(e)
+    {
+      setProject(e)
+      console.log(e)
+    }
+    
+    function manageTheClick(hike)
+    {
+      
+    console.log(hike.likes++)
+    const updateLike =  hikes.filter((item)=> item.id === hike.id)
+      
+       updateLike[0].likes+=1
+      
+       const newHikeArray = hikes.map((item)=>
+       {
+        if (item.id === updateLike.id)
+        {
+          return updateLike
+        }
+        else {
+
+          return item
+        }})
+        fetch(`http://localhost:4000/hiking/${hike.id}`,
+        {
+          method: "PATCH",
+          headers:{"Content-Type":"application/json",
+        },    
+        body:JSON.stringify(hike),
+      })
+      .then(r => r.json())
+      .then ( setHikes(newHikeArray))
+    }
 
   return (
     <div className = "grad" >
@@ -94,13 +138,18 @@ function App() {
       <Route path = "/HikingForm">
     <HikingForm handleSubmit={manageSubmit}/>
     </Route>
-    <Route path = "/HikingPage">
-    <HikingPage hikes = {hikes} handleClick = {manageClick}/>
+    <Route exact path = "/HikingPage">
+    <HikingPage className = "wrapper"  hikes = {hikes} handleClick = {manageClick}/>
+    </Route>
+    <Route path="/HikingPage/:id">
+   <HikingCard  setProject = {manageProject} hike= {project} handleClick = {manageTheClick} />
     </Route>
     <Route exact path = "/About">
     <About/>
     </Route>
-   
+    <Route  path = "*">
+    <About/>
+    </Route>
     </Switch>
   
     </div>
