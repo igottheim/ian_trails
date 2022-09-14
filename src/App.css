@@ -83,8 +83,12 @@
 
 .link{
   color: rgb(12, 6, 6);
+  text-align: left;
 }
-
+.link2{
+  color: rgb(12, 6, 6);
+  text-align: right
+}
 
 /* styling for like button */
 .button{

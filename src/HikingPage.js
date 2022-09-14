@@ -2,9 +2,6 @@
 
 import HikingList from "./HikingList";
 
-
-
-
 function HikingPage({hikes, handleClick, setProject})
 {   
    
@@ -15,7 +12,6 @@ function HikingPage({hikes, handleClick, setProject})
     </>
 
     )
-
 }
 
 export default HikingPage

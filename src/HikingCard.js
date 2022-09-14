@@ -68,7 +68,7 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
       <span>
       <Link className = "link" to={`/HikingPage/${hike.id}`}>Zoom In</Link>
       <span className= "span"> </span>
-      <Link className = "link" to={`/HikingPage/`}>See All Cards</Link>
+      <Link className = "link2" to={`/HikingPage/`}>See All Cards</Link>
       </span>
     </Card>
   );

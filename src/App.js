@@ -142,7 +142,7 @@ function App() {
     <HikingPage className = "wrapper"  hikes = {hikes} handleClick = {manageClick}/>
     </Route>
     <Route path="/HikingPage/:id">
-   <HikingCard  className = "wrapper" setProject = {manageProject} hike= {project} handleClick = {manageTheClick} />
+   <HikingCard setProject = {manageProject} hike= {project} handleClick = {manageTheClick} />
     </Route>
     <Route exact path = "/About">
     <About/>
