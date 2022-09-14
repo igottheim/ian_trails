@@ -38,8 +38,7 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
   }
 
   return (
-    <Card 
-    variant="outlined" sx={{ "--Card-radius": "25px", maxWidth: '400px', marginLeft: "450px", color: "black", background: "linear-gradient(white,  green 30%)" , flexDirection: "column"}}>
+    <Card className = "card">
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
         <Typography level="h2" fontSize="md" textAlign={"center"}>
          {hike.name}
@@ -58,9 +57,9 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
       </AspectRatio>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
       <span >
-        Distance: {hike.distance} miles
-        <Button onClick ={()=>handleClick(hike)} 
-          sx={{ fontWeight: 600, border: '2px solid black', marginLeft: 18}}
+        Distance: {hike.dogFriendly===false? `${hike.distance} miles`:  `${hike.distance} miles 🐕`} 
+        <Button className = "likeButton" onClick ={()=>handleClick(hike)} 
+          sx={{ fontWeight: 600, border: '2px solid black', marginLeft: "85%"}}
         >
           {hike.likes} ⛰️ 
         </Button>

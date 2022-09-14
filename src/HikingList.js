@@ -10,7 +10,7 @@ function HikingList({hikes, handleClick, setProject})
 
     return(
 
-        <div className = "div" >{hikingElement}</div>
+        <div  className="wrapper">{hikingElement}</div>
     )
 }
 

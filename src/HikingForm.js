@@ -1,7 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { CheckBox } from '@mui/icons-material';
 
 function HikingForm({handleSubmit}) {
+
 
   return (
     <Form className='Form' onSubmit={(e)=> handleSubmit(e)}>
@@ -25,9 +27,12 @@ function HikingForm({handleSubmit}) {
         <Form.Label>Hike Description</Form.Label>
         <Form.Control type="hike" placeholder="Description of Hike" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <input type="checkbox" value="Dog"/>
+      <label> Dog Friendly?</label>
+      <Button className= "button" variant="primary" type="submit">
         Submit New Hike!
       </Button>
+      
     </Form>
   );
 }

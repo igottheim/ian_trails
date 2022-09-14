@@ -1,3 +1,6 @@
+
+
+
 function About()
 {
     return(
@@ -7,12 +10,10 @@ function About()
        
        <p></p>
        
-        <p className="center">
+        <span className="center">
 
-       
-      
+        <img className = "imagesizing" src = "/assets/3.jpg"></img>
        <ul className = "ul" > Benefits of Hiking
-    
        <li className = "list"> Hiking clears the mind and reduces stress </li>
        <li className = "list">Hiking makes us happier</li>
        <li className = "list"> Hiking improves sleep quality</li>
@@ -24,7 +25,9 @@ function About()
        <li className = "list">Hiking with friends</li>
        <li className = "list">Learn to live in the moment</li>
        </ul>
-       </p>
+       <img className = "imagesizing" src = "/assets/2.jpg"></img>
+       </span>
+       
        
         </>
     )
