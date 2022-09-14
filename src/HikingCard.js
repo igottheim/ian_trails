@@ -15,7 +15,8 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
 
  function HikingCard({hike, handleClick, setProject}) {
   
-  
+ 
+ 
   const params = useParams()
   console.log(params)
 
@@ -57,12 +58,13 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
       </AspectRatio>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
       <span >
-        Distance: {hike.dogFriendly===false? `${hike.distance} miles`:  `${hike.distance} miles 🐕`} 
+        Distance: {hike.dogFriendly===false? `${hike.distance} miles ⛔🐕 `:  `${hike.distance} miles 🐕`} 
         <Button className = "likeButton" onClick ={()=>handleClick(hike)} 
           sx={{ fontWeight: 600, border: '2px solid black', marginLeft: "85%"}}
         >
           {hike.likes} ⛰️ 
         </Button>
+       
         </span>
       </Box>
       <span>

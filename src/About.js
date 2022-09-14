@@ -27,8 +27,6 @@ function About()
        </ul>
        <img className = "imagesizing" src = "/assets/2.jpg"></img>
        </span>
-       
-       
         </>
     )
 }
