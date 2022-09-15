@@ -79,7 +79,7 @@ function App() {
         }
 
 
-        fetch('http://localhost:4000/hiking',
+        fetch('https://project-json.herokuapp.com/hiking/',
         {
           method:"POST",
           headers:{"Content-Type":"application/json",
@@ -120,7 +120,7 @@ function App() {
 
           return item
         }})
-        fetch(`https://project-json.herokuapp.com/hiking${hike.id}`,
+        fetch(`https://project-json.herokuapp.com/hiking/${hike.id}`,
         {
           method: "PATCH",
           headers:{"Content-Type":"application/json",
