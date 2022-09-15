@@ -15,20 +15,6 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
 
  function HikingCard({hike, handleClick, setProject}) {
   
- 
- 
-  const params = useParams()
-  console.log(params)
-
-    useEffect(() => {
-        fetch(`https://project-json.herokuapp.com/hiking/${params.id}`)
-            .then(r => r.json())
-            .then(data => setProject(data))
-    }, [params.id])
-    
-    
-
-    
 
   //Switches the card face from the image of the hike to the description
   const [imageOn, setImageOn]= useState(true)
