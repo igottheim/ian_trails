@@ -89,6 +89,7 @@ function App() {
         
           setHikes([...hikes, obj])
           // history.push(`/HikingPage/${obj.id}`)
+          alert("SUBMITTED!")
       }
       else{
         
