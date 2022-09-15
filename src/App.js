@@ -60,9 +60,9 @@ function App() {
     function manageSubmit(e)
     {
       let obj
-      let response
+      
       e.preventDefault()
-      console.log(e.target[5].checked)
+     
       if (e.target[0].value !==""&&e.target[1].value !==""&& e.target[2].value !==""&&e.target[3].value!== ""&&e.target[4].value!== "")
       {
         obj = {
@@ -88,7 +88,7 @@ function App() {
         })
         
           setHikes([...hikes, obj])
-          history.push(`/HikingPage/${obj.id}`)
+          // history.push(`/HikingPage/${obj.id}`)
       }
       else{
         
