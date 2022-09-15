@@ -79,7 +79,7 @@ function App() {
         }
 
 
-        fetch('https://project-json.herokuapp.com/hiking/',
+        fetch('https://project-json.herokuapp.com/hiking',
         {
           method:"POST",
           headers:{"Content-Type":"application/json",
