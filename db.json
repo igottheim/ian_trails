@@ -83,6 +83,16 @@
       "id": 8,
       "dogFriendly": true,
       "description": "Check out this 3.8-mile loop trail near Nellysford, Virginia. Generally considered a moderately challenging route, it takes an average of 2 h 15 min to complete. This is a very popular area for birding, camping, and hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are April through September."
+    },
+    {
+      "name": "Maryland Heights Trail",
+      "Location": "Harpers Ferry, WV",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2018_30/1343189/harpers-ferry-main-today-180601.jpg",
+      "distance": "6.6",
+      "likes": 1,
+      "id": 9,
+      "dogFriendly": true,
+      "description": "Enjoy this 6.6-mile loop trail near Harpers Ferry, West Virginia. Generally considered a challenging route, it takes an average of 3 h 31 min to complete. This is a very popular area for birding, hiking, and running, so you'll likely encounter other people while exploring. The trail is open year-round and is beautiful to visit anytime."
     }
   ]
 }

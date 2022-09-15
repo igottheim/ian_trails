@@ -44,7 +44,6 @@
 
 .wrapper{
   columns: 2;
-  align-content: center;
 
 }
 
@@ -116,7 +115,8 @@
  background: linear-gradient(white,  green 30%);
  max-width: 700px;
  display: flex;
- justify-content: center
+ justify-content: center;
+ break-inside: avoid
  
 }
 
