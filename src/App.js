@@ -20,7 +20,7 @@ function App() {
 
   //useEffect to pull information from db.json() file
   useEffect(()=>{
-  fetch('http://localhost:4000/hiking')
+  fetch('https://project-json.herokuapp.com/hiking')
   .then(r=> r.json())
   .then(data => setHikes(data))
   }
@@ -44,7 +44,7 @@ function App() {
           return item
         }})
         
-        fetch(`http://localhost:4000/hiking/${hike.id}`,
+        fetch(`https://project-json.herokuapp.com/hiking/${hike.id}`,
         {
           method: "PATCH",
           headers:{"Content-Type":"application/json",
@@ -120,7 +120,7 @@ function App() {
 
           return item
         }})
-        fetch(`http://localhost:4000/hiking/${hike.id}`,
+        fetch(`https://project-json.herokuapp.com/hiking${hike.id}`,
         {
           method: "PATCH",
           headers:{"Content-Type":"application/json",
