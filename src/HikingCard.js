@@ -21,7 +21,7 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
   console.log(params)
 
     useEffect(() => {
-        fetch(`https://project-json.herokuapp.com/hiking/${params.id}`)
+        fetch(`http://localhost:4000/hiking/${params.id}`)
             .then(r => r.json())
             .then(data => setProject(data))
     }, [params.id])
