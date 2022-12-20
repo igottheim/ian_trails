@@ -20,7 +20,7 @@ function App() {
 
   //useEffect to pull information from db.json() file
   // useEffect(()=>{
-  // fetch('http://localhost:4000/hiking')
+  // fetch('https://edge-config.vercel.com/ecfg_hps9g4funsize4p4cjx2o5w8zame?token=bedf7cb0-1ae3-44f4-960d-bb33c670d72b')
   // .then(r=> r.json())
   // .then(data => setHikes(data))
   // }
@@ -29,7 +29,7 @@ function App() {
   useEffect(()=>{
     fetch( 'https://edge-config.vercel.com/ecfg_hps9g4funsize4p4cjx2o5w8zame?token=bedf7cb0-1ae3-44f4-960d-bb33c670d72b')
     .then(r=> r.json())
-    .then(data => console.log(data))
+    .then(data => setHikes(data.items.hiking))
     }
     ,[])
 
