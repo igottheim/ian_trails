@@ -7,7 +7,7 @@ import About from './About';
 import NavBar from './NavBar';
 import {Route, Switch, useHistory} from 'react-router-dom';
 import HikingCard from './HikingCard';
-
+import { get } from '@vercel/edge-config';
 
 import { useState , useEffect } from 'react';
 
@@ -19,12 +19,20 @@ function App() {
 
 
   //useEffect to pull information from db.json() file
+  // useEffect(()=>{
+  // fetch('http://localhost:4000/hiking')
+  // .then(r=> r.json())
+  // .then(data => setHikes(data))
+  // }
+  // ,[])
+
   useEffect(()=>{
-  fetch('http://localhost:4000/hiking')
-  .then(r=> r.json())
-  .then(data => setHikes(data))
-  }
-  ,[])
+    fetch( 'https://edge-config.vercel.com/ecfg_hps9g4funsize4p4cjx2o5w8zame?token=bedf7cb0-1ae3-44f4-960d-bb33c670d72b')
+    .then(r=> r.json())
+    .then(data => console.log(data))
+    }
+    ,[])
+
  
 
   //Manages and persists the amount of likes for a hike with a patch request
