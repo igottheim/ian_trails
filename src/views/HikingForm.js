@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { CheckBox } from '@mui/icons-material';
-
+import React from 'react';
 function HikingForm({handleSubmit}) {
 
 

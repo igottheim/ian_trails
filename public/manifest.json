@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ian Trails",
+  "name": "The IanTrails app is a social media interface for displaying hikes that one has been on. It has been set up to have similar styling to instagram, so that it is enjoyable to read through the information.",
   "icons": [
     {
       "src": "favicon.ico",
