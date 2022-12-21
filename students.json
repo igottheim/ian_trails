@@ -1,19 +1,98 @@
 {
-  "posts": [
+  "hiking": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Mt. Whitney",
+      "Location": "Inyo, California",
+      "Date": "June 26, 2022",
+      "image": "/assets/1.jpg",
+      "likes": 95,
+      "distance": "22",
+      "dogFriendly": false,
+      "description": "Experience this 20.9-mile out-and-back trail near Lone Pine, California. Generally considered a challenging route, it takes an average of 13 h 0 min to complete. This is a very popular area for backpacking, camping, and hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are April through October."
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Breakneck Ridge",
+      "Location": "Philipstown, NY",
+      "Date": "July 28, 2022",
+      "image": "https://s.hdnux.com/photos/01/21/56/05/21422433/5/2400x0.jpg",
+      "likes": 55,
+      "distance": "4",
+      "dogFriendly": true,
+      "description": "Head out on this 3.2-mile loop trail near Cornwall-on-Hudson, New York. Generally considered a challenging route, it takes an average of 2 h 16 min to complete. This is a very popular area for hiking and rock climbing, so you'll likely encounter other people while exploring. The best times to visit this trail are April through November."
+    },
+    {
+      "id": 3,
+      "name": "Old Rag",
+      "Location": "Syria, VA",
+      "Date": "April 4, 2022",
+      "image": "https://www.nps.gov/common/uploads/cropped_image/primary/827699E5-94E1-A320-CEB9F6FC0A97FB6C.jpg?width=1600&quality=90&mode=crop",
+      "likes": 23,
+      "distance": "9",
+      "dogFriendly": false,
+      "description": "Discover this 9.4-mile loop trail near Etlan, Virginia. Generally considered a challenging route, it takes an average of 5 h 25 min to complete. This is a very popular area for hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are May through October."
+    },
+    {
+      "id": 4,
+      "name": "Bull Hill",
+      "Location": "Cold Spring, NY",
+      "Date": "September, 12, 2022",
+      "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjM4ODk5MTIvMmZkZGVmOTNhOTgwZTIxNWY1YzBkNzc3OWMwMDc4ODQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
+      "likes": 48,
+      "distance": "5.5",
+      "dogFriendly": true,
+      "description": "Head out on this 5.4-mile loop trail near Cold Spring, New York. Generally considered a moderately challenging route, it takes an average of 3 h 1 min to complete. This is a very popular area for hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are April through October."
+    },
+    {
+      "name": "Mt. Kilamanjaro",
+      "Location": "Kibosho Magharibi, Kilimanjaro",
+      "image": "https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjE4MzQ3MTcvZDdkNzNjOGQ3MjA1OWQ5ZWE1MDQ3NjhlNzJhOGQ4N2QuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoyMDQ4LCJoZWlnaHQiOjIwNDgsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsImpwZWciOnsidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWlzZVNjYW5zIjp0cnVlLCJxdWFudGlzYXRpb25UYWJsZSI6M319fQ==",
+      "distance": "40.8",
+      "likes": 32,
+      "id": 5,
+      "dogFriendly": false,
+      "description": "Enjoy this 40.8-mile point-to-point trail near Kibosho Magharibi, Kilimanjaro. Generally considered a challenging route, it takes an average of 30 h 16 min to complete. This is a very popular area for backpacking, camping, and hiking, so you'll likely encounter other people while exploring."
+    },
+    {
+      "name": "Mt. Tammany",
+      "Location": "Pahaquarry, New Jersey.",
+      "image": "https://www.njhiking.com/wp-content/uploads/2019/06/mt-tammany-fall2009-600x350-1-570x333.jpg",
+      "distance": "3.6 ",
+      "likes": 20,
+      "id": 6,
+      "dogFriendly": true,
+      "description": "Explore this 3.6-mile loop trail near Pahaquarry, New Jersey. Generally considered a challenging route, it takes an average of 2 h 20 min to complete. This is a very popular area for hiking, so you'll likely encounter other people while exploring."
+    },
+    {
+      "name": "Billy Goat Trail",
+      "Location": "Potomac, MD",
+      "image": "https://nvms3.s3.amazonaws.com/wp-content/uploads/2015/10/1015hiking_billygoat1.jpg",
+      "distance": "3.9",
+      "likes": 31,
+      "id": 7,
+      "dogFriendly": false,
+      "description": "Discover this 3.9-mile loop trail near Potomac, Maryland. Generally considered a moderately challenging route, it takes an average of 1 h 18 min to complete. This is a very popular area for hiking, running, and walking, so you'll likely encounter other people while exploring."
+    },
+    {
+      "name": "Humpback Rock",
+      "Location": "Nellysford, Virginia",
+      "image": "https://www.blueridgeparkway.org/wp-content/uploads/2017/03/Humpback_Rocks3__VA__Cameron_Davidson-800x700-c-default.jpg",
+      "distance": "3.8",
+      "likes": 18,
+      "id": 8,
+      "dogFriendly": true,
+      "description": "Check out this 3.8-mile loop trail near Nellysford, Virginia. Generally considered a moderately challenging route, it takes an average of 2 h 15 min to complete. This is a very popular area for birding, camping, and hiking, so you'll likely encounter other people while exploring. The best times to visit this trail are April through September."
+    },
+    {
+      "name": "Maryland Heights Trail",
+      "Location": "Harpers Ferry, WV",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2018_30/1343189/harpers-ferry-main-today-180601.jpg",
+      "distance": "6.6",
+      "likes": 4,
+      "id": 9,
+      "dogFriendly": true,
+      "description": "Enjoy this 6.6-mile loop trail near Harpers Ferry, West Virginia. Generally considered a challenging route, it takes an average of 3 h 31 min to complete. This is a very popular area for birding, hiking, and running, so you'll likely encounter other people while exploring. The trail is open year-round and is beautiful to visit anytime."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

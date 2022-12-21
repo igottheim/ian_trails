@@ -8,34 +8,22 @@ import Typography from '@mui/joy/Typography';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
 
+function HikingCard({hike, handleClick, setProject}) {
+  const params = useParams();
 
-
- function HikingCard({hike, handleClick, setProject}) {
-  
- 
- 
-  const params = useParams()
-  console.log(params)
-
-    useEffect(() => {
-        fetch(`http://localhost:4000/hiking/${params.id}`)
-            .then(r => r.json())
-            .then(data => setProject(data))
-    }, [params.id])
-    
-    
-
-    
+  useEffect(() => {
+    fetch(`http://localhost:4000/hiking/${params.id}`)
+    .then(r => r.json())
+    .then(data => setProject(data))
+  }, [params.id]);
 
   //Switches the card face from the image of the hike to the description
-  const [imageOn, setImageOn]= useState(true)
-  function manageImage()
-  {
-    setImageOn(!imageOn)
+  const [imageOn, setImageOn]= useState(true);
 
+  function manageImage(){
+    setImageOn(!imageOn);
   }
 
   return (
@@ -51,7 +39,7 @@ import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded'
        {imageOn? <img
           onClick = {manageImage}
           src={hike.image}
-          alt="Image Did not Load"
+          alt="Did not load!"
           
         />: <div onClick={manageImage}>{hike.description}</div>}
       
